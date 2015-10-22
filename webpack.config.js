@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/app.jsx',
     output: {
         path: __dirname,
         filename: 'bundle.js'
@@ -7,7 +7,10 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: 'style!css' },
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader?optional[]=runtime&stage=0" }
+            { test: /\.js[x]?$/, exclude: /node_modules/, loader: "babel-loader?optional[]=runtime&stage=0" }
         ]
+    },
+    devServer: {
+        port: 1977
     }
 };

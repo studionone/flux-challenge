@@ -2,10 +2,10 @@
   "name": "sn-flux-challenge",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/app.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server",
+    "start": "./node_modules/.bin/webpack-dev-server & node ./flux-challenge/server/index.js",
     "build:js": "./node_modules/.bin/webpack"
   },
   "author": "",
@@ -17,8 +17,12 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "alt": "^0.17.6",
     "babel-runtime": "^5.8.25",
+    "immutable": "^3.7.5",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-dom": "^0.14.0",
+    "superagent": "^1.4.0",
+    "ws": "^0.8.0"
   }
 }
