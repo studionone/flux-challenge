@@ -58,4 +58,4 @@ class LocationStore {
     }
 }
 
-module.exports = alt.createStore(LocationStore, 'LocationStore');
+export default alt.createStore(LocationStore, 'LocationStore');
